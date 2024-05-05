@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350173797375",
+    "project_id": "prakflutterfirebase-890fd",
+    "storage_bucket": "prakflutterfirebase-890fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350173797375:android:257943db9d5508f5a1a5ca",
+        "android_client_info": {
+          "package_name": "com.example.pertemuan9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSDlgwn4WXQP-zsgddai5bIuLAX0X9kf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
