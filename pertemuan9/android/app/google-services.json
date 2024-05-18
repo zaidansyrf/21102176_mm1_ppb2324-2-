@@ -12,7 +12,20 @@
           "package_name": "com.example.pertemuan9"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "350173797375-ui83run0kbv2kc3p3r1t61j550jd2fis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pertemuan9",
+            "certificate_hash": "d082bcaba9e62e50ce875ac20294a27110c7d243"
+          }
+        },
+        {
+          "client_id": "350173797375-pmmgs9kvs94b5r3e9fri319s5hgohh4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBSDlgwn4WXQP-zsgddai5bIuLAX0X9kf4"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350173797375-pmmgs9kvs94b5r3e9fri319s5hgohh4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

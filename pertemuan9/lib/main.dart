@@ -1,8 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pertemuan9/bloc/login/login_cubit.dart';
 import 'package:pertemuan9/bloc/register/register_cubit.dart';
+import 'package:pertemuan9/ui/home_screen.dart';
+import 'package:pertemuan9/ui/login.dart';
 import 'package:pertemuan9/ui/splash.dart';
 import 'package:pertemuan9/utils/routes.dart';
 import 'firebase_options.dart';
@@ -30,7 +33,22 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         navigatorKey: NAV_KEY,
         onGenerateRoute: generateRoute,
-        home: SplashScreen(),
+        home: StreamBuilder<User?>(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting){
+              return const CircularProgressIndicator();
+            }else if (snapshot.hasData){
+              return HomeScreen();
+            }else if (snapshot.hasError){
+              return const Center(
+                child: Text("Terjadi kesalahan!",
+              ),);
+            }else {
+              return const LoginScreen();
+            }
+          }
+        ),
       ),
     );
   }
