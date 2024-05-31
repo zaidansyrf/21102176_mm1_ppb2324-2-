@@ -1,5 +1,6 @@
 {
     "discord.lowerDetailsDebugging": "Debugging",
     "discord.removeTimestamp": false,
-    "discord.lowerDetailsEditing": "Workspace: {workspace}"
+    "discord.lowerDetailsEditing": "Workspace: {workspace}",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
